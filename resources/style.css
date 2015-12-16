@@ -55,6 +55,7 @@
 .mrl, .mhl, .mal {margin-right:1.5em !important;}
 .mll, .mhl, .mal {margin-left:1.5em !important;}
 
+.clear { clear:both;}
 /*** GRID ***/
 .gridWrap {
     overflow: hidden;
@@ -156,6 +157,8 @@
 .opq-color { color: #3eab34 !important; }
 .sf2-color { color: #08C !important; }
 .php-color { color: #6C7EB7 !important; }
+.js-color { color: #F9DE5C !important; }
+.apero-color { color: #CC3366 !important; }
 .proxy-color { color: #f58006 !important; /* #FC6A31; */ }
 .anet-color { color: #008AFF !important; }
 .doctrine-color { color: #FC6A31 !important; }
@@ -165,6 +168,8 @@
 }
 
 .vam { vertical-align: middle !important;}
+
+.italic {font-style: italic !important;}
 
 .subtitle {font-style: italic !important; color: #DDD;}
 
@@ -199,12 +204,12 @@
     background-color:rgba(255, 255, 255, 0.8) !important;
     color:#000 !important;
     max-width: 60%;
-    margin: 0 auto !important;
+    margin: 0 auto 1em !important;
     padding:0.5em 1em !important;
 }
 .content * { color: #000 !important; }
 .content .content {
-    margin: 1em !important;
+    margin: 1em 1% !important;
     max-width: none;
 }
 .folder {
@@ -217,14 +222,21 @@
         border-color: #EEE !important;
         background-color: #CCC !important;
     }
-    .folder > .content:nth-child(3) {
+    .folder > .content:nth-child(2n+1) {
+        border-color: #00CEFF !important;
+        background-color: #008AFF !important;
+    }
+    .folder > .content:nth-child(4n+2) {
         top:4em; left:6em;
     }
-    .folder > .content:nth-child(4) {
+    .folder > .content:nth-child(4n+3) {
         top:5em; left:12em;
     }
-    .folder > .content:last-child {
+    .folder > .content:nth-child(4n+4) {
         top:6em; left:18em;
+    }
+    .folder > .content:last-child {
+        top:4.5em; left:9em;
     }
 .text-left { text-align: left !important;}
 .text-right { text-align: right !important;}
